@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bootstrap 5 - Transparent Navbar</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <style>
+    .banner-image {
+      background-image: url('https://img.freepik.com/premium-photo/landscape-sea-mist-mountains_46740-1168.jpg?size=626&ext=jpg');
+      background-size: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar  -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light p-md-3">
+    <div class="container">
+      <a class="navbar-brand " href="#">Menu</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="mx-auto"></div>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
+    <div class="content text-center">
+      <h1 class="text">Kerala Tourism</h1>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-4">
+        <div class="card" style="width: 18rem;">
+          <img src="https://www.ekeralatourism.net/wp-content/uploads/2018/03/Alleppey.jpg" class="card-img-top"
+            alt="...">
+          <div class="card-body">
+            <h5 class="card-title">1 Alleppey (Alappuzha):</h5>
+            <p class="card-text">There is the whole of Kerala in one side, and then there is this heavenly tourist
+              destination called Alappuzha or Alleppey! Esteemed as the ‘Backwater Capital of India’ or the ‘Venice of
+              the East’, Alleppey is known for its silent backwaters and bountiful beauty!</p>
+            <a href="#" class="btn btn-primary">Search</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card" style="width: 18rem;">
+          <img src="https://www.ekeralatourism.net/wp-content/uploads/2018/03/Cochin.jpg" class="card-img-top"
+            alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Kochin</h5>
+            <p class="card-text">Kochi or Cochin is a unique placein God’s Own Country that is perfectly blended with
+              cultural values and modern ideas! Fondly called the ‘Queen of the Arabian Sea’, this imposing port-city
+              has always been an attraction point since the beginning of history.</p>
+            <a href="#" class="btn btn-primary">Search</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card" style="width: 18rem;">
+          <img src="https://www.ekeralatourism.net/wp-content/uploads/2018/03/Kumarakom.jpg" class="card-img-top"
+            alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Munnar</h5>
+            <p class="card-text">Adorned by the magical charm of the Vembanad Lake, Kumarakom is another beguiling
+              backwater destination in God’s Own Country. Located within the proximity to Kottayam city, this is the
+              place where even being lazy is also one of the best things you can do during your Kerala holidays.</p>
+            <a href="#" class="btn btn-primary">Search</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+  <div class="container">
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header">
+          <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseOne">
+            Button
+          </a>
+        </div>
+        <div id="collapseOne" class="collapse show " data-bs-parent="#accordion">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-4">
+                <img
+                  src="data:image/jpeg;base64,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"
+                  class="image-fluid" width="350">
+              </div>
+              <div class="col-4">
+                <img src="img3.jpg" class="image-fluid" width="350"><br><br>
+                <img src="img.jpg" class="image-fluid" width="350">
+              </div>
+              <div class="col-4">
+                <img
+                  src="https://www.businessinsider.in/thumb/msid-97092207,width-900,height-1200,resizemode-4/bivoices/news/kerala-makes-it-to-the-nyt-2023-travel-list-checkout-other-places-in-the-list.jpg"
+                  class="image-fluid" width="420">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+  <footer class="text-center text-lg-start bg-light text-muted">
+    <br>
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <div class="row mt-3">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>KERALA TOURISM
+            </h6>
+            <p>
+              Kerala, a surreal destination where the morning brings in the mist and magic. Fondly called the “God’s Own
+              Country”
+          </div>
+
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3"></i> Kerala</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              info@example.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> 234567890</p>
+            <p><i class="fas fa-print me-3"></i>34567890</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2023 Copyright:nandhini b
+    </div>
+  </footer>
+</body>
+
+</html>
