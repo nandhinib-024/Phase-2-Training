@@ -1,0 +1,14 @@
+.pkname
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   
+    font-size: large;
+}
+.allpackages a
+{
+    text-decoration:none;
+}
+.pklocation , .pkduration
+{
+   padding-right: 15px;
+}
