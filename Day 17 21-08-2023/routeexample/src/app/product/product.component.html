@@ -1,0 +1,22 @@
+<p>product works! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, cum est, itaque alias delectus facilis velit ad incidunt excepturi assumenda, ratione nihil quae dolorem quaerat. Distinctio, ipsam mollitia? Quidem, dicta!</p>
+<h1>Product List</h1>
+<div class='table-responsive'>
+    <table class='table'>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of products;">
+                <td>{{product.productID}}</td>
+                <td><a [routerLink]="['detail',product.productID]">{{product.name}} </a> </td>
+                <td>{{product.price}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+ 
+<router-outlet></router-outlet>
